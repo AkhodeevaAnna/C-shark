@@ -4,9 +4,6 @@
 
 Console.Write("Введите кол-во чисел: ");
 int size = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите промежуток для генератора случайных чисел: ");
-// int min = Convert.ToInt32(Console.ReadLine());
-// int max = Convert.ToInt32(Console.ReadLine());
 
 int[] mass = new int [size];
 
