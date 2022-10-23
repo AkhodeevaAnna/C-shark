@@ -11,7 +11,11 @@ double b2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите k2: ");
 double k2 = Convert.ToInt32(Console.ReadLine());
 
+if (b1 == b2 && k1 == k2) Console.Write($"Прямые совпадают");
+else if (b1 != b2 && k1 != k2)
+{
 double x = (b2 - b1) / (k1 - k2);
 double y = k1 * x + b1;
-
-Console.Write($"({x}; {y})");
+Console.Write($"Прямые пересекаются в точке с координатами: ({x}; {y})");
+}
+else if (b1 != b2 && k1 == k2) Console.Write($"Прямые параллельны");
