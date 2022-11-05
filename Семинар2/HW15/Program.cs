@@ -6,9 +6,6 @@
 Console.Write("Введите номер дня недели: ");
 int day = Convert.ToInt32(Console.ReadLine());
 
-if (day == 6 || day == 7)
-    Console.Write("Да");
-else if (day > 7)
-    Console.WriteLine("Такого дня недели нет");
-else
-    Console.WriteLine("Нет");
+if (day == 6 || day == 7) Console.Write("Да");
+else if (day > 7) Console.WriteLine("Такого дня недели нет");
+else Console.WriteLine("Нет");

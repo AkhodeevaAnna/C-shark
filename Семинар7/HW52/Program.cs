@@ -60,3 +60,36 @@ double sum = 0;
 FillTwoArrayRandom(mass, min, max);
 PrintTwoArray(mass);
 Console.WriteLine($"Среднее арифметическое каждого столбца: {AvergeOfEveryColumn(mass)}");
+
+// Буткэмп
+// Console.Clear();
+// Console.Write("Введите кол-во строк массив: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите кол-во столбцов в массиве: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[,] mass = new int [m, n];
+
+
+// void FillTwoArrayTable (int[,] nums)
+// {
+//     for (int i = 0; i < nums.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < nums.GetLength(1); j++)
+//         {
+//             if (i == 0)
+//             {
+//                 nums[i,j] = j + 1;
+//             }
+//             else if (j == 0)
+//             {
+//                 nums[i,j] = i + 1;
+//             }
+//             else if (i > 0 && j > 0)
+//             {
+//                 nums[i,j] = nums[0,j] * nums[i,0];
+//             }
+//         }
+//     }
+// }
+// FillTwoArrayTable(mass);
+// PrintTwoArray(mass);

@@ -8,7 +8,7 @@ int MinN = N - N * 2;
 int a = MinN;
 while (MinN <= a && a < N)
 {
-Console.Write($"{a} ");
-a = a + 1;
+    Console.Write($"{a} ");
+    a = a + 1;
 }
 Console.Write($"{N} ");

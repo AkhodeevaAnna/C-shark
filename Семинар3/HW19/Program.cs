@@ -12,10 +12,7 @@ int four = num / 10 % 10;
 int five = num % 10;
 if (num / 10000 < 10 && num / 10000 > 0)
 {
-    if (one == five && two == four)
-        Console.Write("Данное число палиндром");
-    else
-        Console.Write("Данное число НЕ палиндром");
+    if (one == five && two == four) Console.Write("Данное число палиндром");
+    else Console.Write("Данное число НЕ палиндром");
 }
-else
-    Console.Write("Это НЕ пятизначное число");
+else Console.Write("Это НЕ пятизначное число");

@@ -55,7 +55,7 @@ string coordinats = "";
 
 void FindNumOfPosition(int[,]col, int m, int n)
 {
-if (m >= col.GetLength(0) || n >= col.GetLength(1)) 
+if (m >= col.GetLength(0) || n >= col.GetLength(1) || m < 0 || n < 0) 
 Console.Write($"Такой позиции в массиве НЕТ, размер массива {col.GetLength(0)}*{col.GetLength(1)}");
 else
 Console.Write($"Элемент, стоящий на позиции {m}*{n} = {col[m,n]}");

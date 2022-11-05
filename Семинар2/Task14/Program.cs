@@ -6,7 +6,5 @@
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num % 7 == 0 && num % 23 == 0)
-    Console.Write("Да");
-else
-    Console.Write("Нет");
+if (num % 7 == 0 && num % 23 == 0) Console.Write("Да");
+else Console.Write("Нет");

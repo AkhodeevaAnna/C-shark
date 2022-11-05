@@ -8,10 +8,7 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-if (num1 % num2 == 0)
-{
-    Console.Write("Кратно");
-}
+if (num1 % num2 == 0) Console.Write("Кратно");
 else
 {
     int ost = num1 % num2;

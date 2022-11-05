@@ -7,18 +7,9 @@ Console.WriteLine("Введите число a:");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число b:");
 int b = Convert.ToInt32(Console.ReadLine());
-if (a > b)
-{
-    Console.WriteLine($"Число a = {a} - больше, число b = {b} - меньше");
-}
+if (a > b) Console.WriteLine($"Число a = {a} - больше, число b = {b} - меньше");
 else
 {
-    if (b > a)
-    {
-        Console.WriteLine($"Число b = {b} - больше, число a = {a} - меньше");
-    }
-    else
-    {
-        Console.WriteLine("Числа a и b равны");
-    }
+    if (b > a) Console.WriteLine($"Число b = {b} - больше, число a = {a} - меньше");
+    else Console.WriteLine("Числа a и b равны");
 }

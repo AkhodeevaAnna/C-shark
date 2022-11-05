@@ -16,7 +16,4 @@ if (N > 1)
         a = a + 1;
     }
 }
-else
-{
-    Console.WriteLine("Таких чисел нет");
-}
+else Console.WriteLine("Таких чисел нет");

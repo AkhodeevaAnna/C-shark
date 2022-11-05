@@ -7,7 +7,7 @@ int num = Convert.ToInt32(Console.ReadLine());
 int N = num;
 while (N > 10)
 {
-int x = N / 10;
-N = N - x * 10;
+    int x = N / 10;
+    N = N - x * 10;
 }
 Console.WriteLine($"Последняя цифра числа {num} - {N}");

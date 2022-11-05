@@ -9,11 +9,5 @@ int result = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (result == num * num)
-{
-Console.WriteLine($"{result} - квдарат {num}");
-}
-else
-{
-Console.WriteLine($"{result} НЕ квдарат {num}");
-}
+if (result == num * num) Console.WriteLine($"{result} - квдарат {num}");
+else Console.WriteLine($"{result} НЕ квдарат {num}");

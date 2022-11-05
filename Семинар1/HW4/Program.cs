@@ -10,14 +10,11 @@ int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число c:");
 int c = Convert.ToInt32(Console.ReadLine());
 
-if (a >= b && a >= c)
-    Console.WriteLine($"Max = {a}");
+if (a >= b && a >= c) Console.WriteLine($"Max = {a}");
 
-else if (b >= a && b >= c)
-    Console.WriteLine($"Max = {b}");
+else if (b >= a && b >= c) Console.WriteLine($"Max = {b}");
 
-else
-    Console.WriteLine($"Max = {c}");
+else Console.WriteLine($"Max = {c}");
 
 // int max = a;
 // if (b > max)
