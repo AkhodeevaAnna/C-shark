@@ -6,9 +6,15 @@ Console.Clear();
 Console.WriteLine("Введите число: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
+while (N < 1)
+{
+Console.WriteLine("Это не натуральное число, введите другое:");
+N = Convert.ToInt32(Console.ReadLine());
+}
+
 string NatNums(int a, int b)
 {
-if (a <= b) return $"{a}" + NatNums(a + 1, b);
+if (a <= b) return $"{a} " + NatNums(a + 1, b);
 else return string.Empty;
 }
 

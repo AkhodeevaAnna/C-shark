@@ -15,5 +15,20 @@ if (a <= b) return $"{a} " + NatNums(a + 1, b);
 else return string.Empty;
 }
 
-string Numbers = NatNums(M, N);
-Console.WriteLine(Numbers);
+string NatNumsDown(int a, int b)
+{
+if (a >= b) return $"{a} " + NatNumsDown(a - 1, b);
+else return string.Empty;
+}
+
+while (M < 1 || N < 1)
+{
+Console.WriteLine("В этом промежутке находятся не только натуральные числа, введите два натуральных числа (больше 0): ");
+M = Convert.ToInt32(Console.ReadLine());
+N = Convert.ToInt32(Console.ReadLine());
+}
+if (M <= N)
+{
+Console.WriteLine(NatNums(M, N));
+}
+else Console.WriteLine(NatNumsDown(M, N));
