@@ -65,42 +65,24 @@ int sum = 0;
     }
 }
 
-int FindMin (int[]col)
+int FindIndexOfMin (int[]col)
 {
-int min = col[0];
-int i;
-    for (i = 0; i < col.Length; i++)
+int min = 0;
+    for (int i = 0; i < col.Length; i++)
     {
-        if (col[i] < min);
-        min = col[i];
+        if (col[i] < col[min])
+        {
+            min = i;
+        }
     }
     return min;
 }
 
-// int FindIndexOfNum (int[]col, int num)
-// {
-// int index = 0;
-//     for (int i = 0; i < col.Length; i++)
-//     {
-//         if (col[i] == num);
-//         index = i;
-//     }
-//     return index;
-// }
-
 FillTwoArrayRandom(mass, min, max);
 PrintTwoArray(mass);
 ArrayOfSumStrings(mass,sum);
-Console.WriteLine();;
+Console.WriteLine();
 PrintArray(sum);
-int minn = FindMin(sum);
-int indexMin = 0;
-int i = 0;
-for (i = 0; i < sum.Length; i++)
-{
-    if (sum[i] == minn);
-    break;
-}
-indexMin = i;
-Console.Write($"Наименьшая сумма элементов в строке: {minn}");;
-Console.Write($"Наименьшая сумма элементов в строке: {indexMin + 1}");;
+Console.WriteLine();
+int indexMin = FindIndexOfMin(sum);
+Console.Write($"Наименьшая сумма элементов в СТРОКЕ: {indexMin + 1}");;
